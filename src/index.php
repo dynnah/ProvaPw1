@@ -1,10 +1,12 @@
 <?php
+
   session_start();
+
   if(!isset($_SESSION['auth']) || $_SESSION['auth'] === false)
     header('Location: login.html');
 
     $pdo = new PDO('mysql:host=mysql;dbname=prova;port=3306','root','123');
-    $sql = 'SELECT * FROM egresso';
+    $sql = 'SELECT * FROM egressos';
     $result = $pdo->query($sql);
     $rows = $result->fetchAll(PDO::FETCH_ASSOC);
 ?>
