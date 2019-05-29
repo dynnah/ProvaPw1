@@ -6,7 +6,7 @@ $password = $_POST['password'] ?? null;
 
 if(authenticateUser($login, $password)){
   $_SESSION['auth'] = true;
-  header('Location: home.php');
+  header('Location: index.php');
 } else {
   //header('Location: login.html');
 }
