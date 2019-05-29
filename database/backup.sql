@@ -5,7 +5,7 @@ use prova;
 CREATE TABLE usuarios (
     id int auto_increment,
     login varchar(30),
-    senha varchar(30)
+    senha varchar(30),
     PRIMARY KEY(id)
 );
 
@@ -19,7 +19,7 @@ CREATE TABLE egressos (
   email varchar(50),
   linkedin varchar(72),
   curso varchar(53),
-  campus varchar(23),
+  campus varchar(23)
  );
 
 
@@ -31,7 +31,7 @@ INSERT INTO egressos VALUES ('20041037087', 'Andreza Vieira', 'Andreza de Sousa 
 INSERT INTO egressos VALUES ('20061370422', 'Anna Clara Nobrega', 'Anna Clara Rodrigues da Nobrega',  'acrnobrega@hotmail.com','https://www.linkedin.com/in/anna-clara-nobrega/','cstsi','ifpb-jp');
 INSERT INTO egressos VALUES ('20061370040','Andréa Bezerra', 'Andréa Fernanda Fontes Bezerra', 'dsi.andrea@hotmail.com','https://www.linkedin.com/in/andrea-fernanda-478a2660/','cstsi','ifpb-jp');
 INSERT INTO egressos VALUES ('20112370505','Alex Martins','Alex Martins Bezerra', 'alexmbezerrajp@gmail.com','https://www.linkedin.com/in/alex-martins-2b480023/','cstsi','ifpb-jp');
-INSERT INTO egressos VALUES ('20071370107','Ângelo Negreiros', 'Ângelo Lemos Vidal de Negreiros', 'angelolvnegreiros@hotmail','','cstsi','ifpb-jp');
+INSERT INTO egressos VALUES ('20071370107','Angelo Negreiros', 'Ângelo Lemos Vidal de Negreiros', 'angelolvnegreiros@hotmail','','cstsi','ifpb-jp');
 INSERT INTO egressos VALUES ('20091370072','Alessandra Silva','Alessandra Mendes da Silva', '','','cstsi','ifpb-jp');
 INSERT INTO egressos VALUES ('20042037154','Alline Morais','Alline Silva de Morais', 'allinemorais@gmail.com','https://www.linkedin.com/in/alline-morais-psm-pspo-50002094/','cstsi','ifpb-jp');
 
