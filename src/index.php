@@ -14,32 +14,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Egressos</title>
-  <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-}
-</style>
-
+  <link rel="stylesheet" href="css/index.css">
 </head>
+  
 <body>
   <h1>Home</h1>
   <a href="logout.php">logout</a>
-
  <table>
  <thead>
+   
       <tr>
         <th>Id</th>
         <th>nomeCompactado</th>
@@ -49,7 +32,9 @@ tr:nth-child(even) {
         <th>curso</th>
         <th>campus</th>
       </tr>
+   
     </thead>
+   
     <tbody>
       <?php 
         for($i = 0; $i < sizeof($rows); $i++){
@@ -63,7 +48,9 @@ tr:nth-child(even) {
           echo '<td>'. $rows[$i]['campus'] . '</td>';
           echo '</tr>';
         }
+      
         ?>
+      
       </tbody>
 </table>
 </body>
