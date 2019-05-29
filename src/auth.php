@@ -1,10 +1,13 @@
 <?php
 
+session_start();
+
 $login = $_POST['login'] ?? null;
 $password = $_POST['password'] ?? null;
 
 if(authenticateUser($login, $password)){
   $_SESSION['auth'] = true;
+  //print_r($_SESSION);
   header('Location: index.php');
 } else {
   header('Location: login.html');
