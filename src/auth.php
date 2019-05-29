@@ -20,8 +20,8 @@ function authenticateUser($user, $pass){
   $result->bindParam(":user", $user);
   $result->bindParam(":pass", $pass);
   $result->execute();
-  return true;
-  //var_dump($result->fetchAll());
+  $row = $result->rowCount();
+     return $row;
   }
   
   catch(Exception $e){
